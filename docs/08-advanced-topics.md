@@ -66,3 +66,13 @@ OpenClaw 可以控制浏览器完成自动化任务：
 - Discord 社区：https://discord.com/invite/clawd
 
 祝你使用愉快！
+
+---
+
+## 📖 导航
+
+- [🏠 教程大纲](../README.md)
+- [← 上一章](./07-custom-skills.md)
+- [下一章 →](./09-email-automation.md)
+
+---

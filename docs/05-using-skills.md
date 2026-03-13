@@ -40,3 +40,13 @@ clawhub install <技能名>
 ## 本章小结
 
 本章我们学习了技能的基本使用方法。在下一章中，我们将学习如何连接飞书。
+
+---
+
+## 📖 导航
+
+- [🏠 教程大纲](../README.md)
+- [← 上一章](./04-basic-configuration.md)
+- [下一章 →](./06-feishu-integration.md)
+
+---

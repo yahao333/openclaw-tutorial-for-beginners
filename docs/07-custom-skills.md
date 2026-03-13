@@ -60,3 +60,13 @@ module.exports = {
 ## 本章小结
 
 本章我们学习了如何创建自定义技能。在最后一章中，我们将介绍一些高级主题。
+
+---
+
+## 📖 导航
+
+- [🏠 教程大纲](../README.md)
+- [← 上一章](./06-feishu-integration.md)
+- [下一章 →](./08-advanced-topics.md)
+
+---

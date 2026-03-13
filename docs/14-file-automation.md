@@ -174,3 +174,13 @@ const total = data.reduce((sum, row) => sum + row.amount, 0);
 - 发现更多技能：https://clawhub.com
 
 祝你使用愉快！🎉
+
+---
+
+## 📖 导航
+
+- [🏠 教程大纲](../README.md)
+- [← 上一章](./13-database-operations.md)
+
+
+---

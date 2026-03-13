@@ -62,3 +62,13 @@ Gateway 启动后，通过浏览器访问控制面板：
 ## 本章小结
 
 本章我们完成了 OpenClaw 的首次运行和基本配置。在下一章中，我们将学习如何进一步配置 OpenClaw。
+
+---
+
+## 📖 导航
+
+- [🏠 教程大纲](../README.md)
+- [← 上一章](./02-environment-setup.md)
+- [下一章 →](./04-basic-configuration.md)
+
+---
