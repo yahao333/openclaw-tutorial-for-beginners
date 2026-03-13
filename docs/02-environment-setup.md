@@ -57,3 +57,13 @@ npm install -g openclaw
 ## 本章小结
 
 本章我们完成了环境准备。现在你应该已经安装了 Node.js 和 OpenClaw。在下一章中，我们将学习如何首次运行 OpenClaw。
+
+---
+
+## 📖 导航
+
+- [🏠 教程大纲](../README.md)
+- [← 上一章](./01-introduction.md)
+- [下一章 →](./03-first-run.md)
+
+---
