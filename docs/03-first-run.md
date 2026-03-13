@@ -1,33 +1,59 @@
 # 第三章：初次运行
 
-## 启动 OpenClaw
+## 初始化 OpenClaw
 
-安装完成后，在终端中输入以下命令启动 OpenClaw：
+首次使用 OpenClaw，需要先初始化并安装服务：
 
 ```bash
-openclaw
+# 初始化安装服务（首次运行推荐）
+openclaw onboard --install-daemon
 ```
 
-## 初始设置
+`openclaw onboard` 会引导你完成：
+- 创建飞书应用并获取凭证
+- 配置应用凭证
+- 启动 Gateway
 
-第一次运行时，OpenClaw 会引导你完成一些基本设置：
+## 启动 Gateway
 
-### 1. 配置工作目录
+初始化完成后，使用以下命令启动 Gateway：
 
-OpenClaw 会询问你要使用的 workspace 目录。你可以选择默认位置，也可以指定一个自定义目录。
+```bash
+# 启动 Gateway（默认端口 18789）
+openclaw gateway --port 18789
 
-### 2. 连接通讯渠道
+# 或者直接运行（使用默认端口）
+openclaw gateway
+```
 
-你可以选择让 OpenClaw 通过哪些渠道与你沟通：
+## 配置频道
 
+如果你想添加或修改通讯渠道：
+
+```bash
+# 登录并配置频道
+openclaw channels login
+```
+
+支持的频道：
 - **网页聊天** - 通过浏览器直接聊天
-- **飞书** - 如果你使用飞书，可以绑定飞书账号
+- **飞书** - 绑定飞书账号
 - **Telegram** - 绑定 Telegram Bot
 - **WhatsApp** - 绑定 WhatsApp 账号
+- **Discord** - 绑定 Discord Bot
+- **iMessage** - macOS 上的 iMessage
 
-### 3. 设置主人
+## 控制面板
 
-告诉 OpenClaw 你是谁，怎么称呼你。
+Gateway 启动后，通过浏览器访问控制面板：
+
+- 本地地址：http://127.0.0.1:18789/
+
+在控制面板中可以：
+- 与 AI 聊天
+- 查看和管理会话
+- 配置频道和节点
+- 查看日志
 
 ## 恭喜入门！
 
