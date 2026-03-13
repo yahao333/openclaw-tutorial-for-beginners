@@ -1,0 +1,61 @@
+#!/usr/bin/expect -f
+
+set timeout 120
+
+spawn gh auth login -h github.com -s repo
+
+expect {
+    "Where do you use GitHub?" {
+        send "\r"
+    }
+    timeout {
+        puts "Timeout at first prompt"
+        exit 1
+    }
+}
+
+expect {
+    "preferred protocol" {
+        send "\r"
+    }
+    timeout {
+        puts "Timeout at protocol"
+        exit 1
+    }
+}
+
+expect {
+    "Authenticate Git" {
+        send "Y\r"
+    }
+    timeout {
+        puts "Timeout at authenticate"
+        exit 1
+    }
+}
+
+expect {
+    "How would you like" {
+        send "\r"
+    }
+    timeout {
+        puts "Timeout at auth method"
+        exit 1
+    }
+}
+
+expect {
+    "one-time code" {
+        puts "Need device auth"
+        exit 1
+    }
+    "Logged in to github.com" {
+        puts "Successfully logged in"
+    }
+    timeout {
+        puts "Timeout waiting for login"
+        exit 1
+    }
+}
+
+expect eof
